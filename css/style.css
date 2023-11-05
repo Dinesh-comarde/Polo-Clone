@@ -1,0 +1,541 @@
+/* font-family: 'Kanit', sans-serif; */
+
+/* @font-face {
+  font-family: fa-brands-400;
+  src: url(webfonts\fa-brands-400.woff2);
+}
+
+@font-face {
+  font-family: fa-regular-400;
+  src: url(webfonts\fa-regular-400.woff2);
+}
+
+@font-face {
+  font-family: fa-solid-900;
+  src: url(webfonts\fa-solid-900.woff2);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*Navigation Bar Styles*/
+
+.navbar-brand {
+  font-size: 2.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.navbar-light {
+  background: transparent;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.offcanvas-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .offcanvas {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
+}
+
+/*Slider - Carousel Styles*/
+
+.slider-img {
+  max-width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  75% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.16);
+  }
+}
+
+.carousel-item img {
+  width: 100%;
+  animation: zoom 6s infinite linear;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.59);
+  opacity: 0.5;
+}
+
+.carousel-caption {
+  bottom: 25%;
+  text-align: left;
+}
+
+.business {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+#business1::after {
+  border-bottom: 3px solid #fff;
+  content: " ";
+  display: block;
+  margin-bottom: 0;
+  margin-top: 1%;
+  width: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#business2::after {
+  border-bottom: 3px solid #fff;
+  content: " ";
+  display: block;
+  margin-bottom: 0;
+  margin-top: 1%;
+  width: 3%;
+}
+
+.carousel-caption h1 {
+  font-size: 4.5rem;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.carousel-caption button {
+  font-size: 0.8rem;
+  padding: 1% 4%;
+  border: none;
+}
+
+.carousel-caption .btn-primary {
+  background-color: rgb(27, 30, 210);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.carousel-caption .btn-primary:hover {
+  background-color: rgb(8, 11, 190);
+  color: #eee;
+}
+
+.carousel-caption .btn-light {
+  color: rgb(53, 52, 52);
+}
+
+@media only screen and (max-width: 835px) {
+  .carousel-caption {
+    bottom: 30%; /* Adjust as needed */
+    text-align: left;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption .btn-primary {
+    padding: 1% 3%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel-caption {
+    bottom: 30%;
+    text-align: left;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption .btn-primary {
+    padding: 1% 3%;
+  }
+}
+
+/*About Section Styles*/
+section {
+  width: 100%;
+  padding: 6% 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+section .row h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+section .row h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+section .row .about-para {
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+
+section .row .about-col-paras {
+  font-size: 1rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+/* Purchase Bar styles */
+.purchase {
+  background-color: rgb(249, 247, 247);
+}
+
+.purchase .btn-primary {
+  font-size: 0.8rem;
+  background-color: rgb(27, 30, 210);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.purchase .btn-primary:hover {
+  background-color: rgb(8, 11, 190);
+  color: #eee;
+}
+
+/* Parallax Styles */
+
+.parallax {
+  background-image: url("../assets/Parallex/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+  position: relative;
+}
+
+.bg-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.59);
+  opacity: 0.5;
+}
+
+.parallax .parallax-intro {
+  padding: 6% 0;
+  text-align: left;
+}
+
+.parallax .parallax-para {
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #eee;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+
+.parallax .parallax-counter {
+  padding: 6% 0;
+  text-align: center;
+}
+
+.counter span {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.counter span::after {
+  border-bottom: 1px solid #fff;
+  content: " ";
+  display: block;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 993px) {
+  .parallax .parallax-intro {
+    text-align: center;
+  }
+}
+
+/* Know More Styles */
+.know-more-para {
+  font-size: 1rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.9rem;
+  margin-bottom: 6%;
+  padding: 1% 15%;
+}
+
+.progress-bar-container {
+  position: relative;
+  width: 100%;
+  margin: 10% 0%;
+  background-color: #eee;
+}
+
+.progress-title {
+  margin-left: 0;
+  margin-top: -5%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: absolute;
+  text-align: left;
+}
+
+.progress-percent {
+  margin-left: 0;
+  margin-top: -5%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: absolute;
+  text-align: right;
+  right: 0;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 0;
+  background-color: blue;
+  transition: width 2s ease-in-out;
+}
+
+.progress-bar-container:not(:first-child) {
+  margin-top: 40px;
+}
+
+.progress-para {
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+
+.blogs {
+  position: relative;
+}
+
+.blog {
+  border-bottom: 2px solid #f7f9fb;
+  float: left;
+  margin-bottom: 2%;
+  padding-bottom: 6%;
+  position: relative;
+  clear: both;
+}
+
+.blogs .blog > img {
+  float: left;
+  display: block;
+  height: 25%;
+  width: 20%;
+  margin-right: 5%;
+  border-radius: 6%;
+}
+
+.blogs .blog .blog-content a {
+  color: #484848;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+
+.blog .blog-content .blog-date,
+.blog .blog-content .blog-category {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.blog .blog-content .blog-date {
+  margin-top: 3%;
+  margin-right: 3%;
+}
+
+/* Contact US form */
+.contact-us {
+  padding: 10% 0;
+  background-image: url("../assets/Branding/background-4.png");
+  background-position: 71% 22%;
+}
+
+.contact-us-para {
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+  margin-bottom: 6%;
+}
+
+.contact-us-details {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+}
+
+.contact-us-details strong {
+  font-size: 1rem;
+  font-style: normal;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 6%;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.social-icons ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 1rem;
+  margin-right: 5%;
+}
+
+.form-group {
+  margin-bottom: 4%;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #777;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+.form-group [type="text"],
+[type="email"]::placeholder {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.form-group .btn-light {
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #fff;
+  padding: 1% 4%;
+}
+
+.form-group .btn-light:hover {
+  background-color: #eee;
+  color: #777;
+}
+
+/* Subscribe Form Styles */
+.subscribe {
+  background-color: rgb(25, 25, 241);
+  padding: 5% 0;
+}
+
+.subscribe-para {
+  font-size: 0.8rem;
+}
+
+#subscribe-submit-button {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 15%;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* Footer Styles */
+.footer-content {
+  padding: 8% 0;
+  background-color: #f6f5f5;
+}
+
+.copyright-content {
+  padding: 2% 0;
+  background-color: #dfdfdf;
+}
