@@ -531,11 +531,66 @@ section .row .about-col-paras {
 
 /* Footer Styles */
 .footer-content {
-  padding: 8% 0;
+  padding: 5% 0;
   background-color: #f6f5f5;
 }
 
 .copyright-content {
   padding: 2% 0;
   background-color: #dfdfdf;
+}
+
+.footer-title {
+  font-size: 1rem;
+  color: #444;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer-para {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #777;
+}
+
+.footer-purchase .btn-primary {
+  font-size: 0.8rem;
+  background-color: rgb(27, 30, 210);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-purchase .btn-primary:hover {
+  background-color: rgb(8, 11, 190);
+  color: #aaa;
+}
+
+.footer-cols ul {
+  padding: 0;
+  margin-top: 5%;
+}
+.footer-cols ul li {
+  list-style-type: none;
+  margin-bottom: 5%;
+}
+
+.footer-cols a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.copyright-text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.copyright-text a {
+  text-decoration: none;
+  color: #777;
+}
+
+.copyright-text a:hover {
+  color: blue;
 }
