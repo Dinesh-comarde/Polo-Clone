@@ -1,3 +1,14 @@
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  console.log("I am running");
+  if (window.scrollY > 100) {
+    navbar.classList.add("scroll");
+  } else {
+    navbar.classList.remove("scroll");
+  }
+});
+
 window.onload = function () {
   const counterElements = document.querySelectorAll(".counter span");
   counterElements.forEach((counterElement) => {

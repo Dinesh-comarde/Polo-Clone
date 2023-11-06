@@ -28,6 +28,9 @@
 
 /*Navigation Bar Styles*/
 
+.navbar {
+  transition: all 0.3s ease;
+}
 .navbar-brand {
   font-size: 2.7rem;
   font-family: "Poppins", sans-serif;
@@ -66,10 +69,30 @@
   letter-spacing: 0.2rem;
 }
 
+.scroll {
+  background: #fff;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.scroll .navbar-brand {
+  color: #444;
+}
+
+.scroll .nav-link {
+  color: #444;
+}
+
+.scroll #navbar-toggle {
+  fill: #444;
+}
+
 @media only screen and (max-width: 992px) {
   .offcanvas {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
+  }
+  .offcanvas .nav-link {
+    color: #fff;
   }
 }
 
