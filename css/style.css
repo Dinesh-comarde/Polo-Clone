@@ -1,20 +1,5 @@
 /* font-family: 'Kanit', sans-serif; */
 
-/* @font-face {
-  font-family: fa-brands-400;
-  src: url(webfonts\fa-brands-400.woff2);
-}
-
-@font-face {
-  font-family: fa-regular-400;
-  src: url(webfonts\fa-regular-400.woff2);
-}
-
-@font-face {
-  font-family: fa-solid-900;
-  src: url(webfonts\fa-solid-900.woff2);
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +134,22 @@
 .carousel-caption {
   bottom: 25%;
   text-align: left;
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .business {
@@ -550,6 +551,14 @@ section .row .about-col-paras {
   padding: 15%;
   font-size: 0.8rem;
   color: #444;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 0;
+  padding-top: 30%;
+  padding-bottom: 30%;
 }
 
 /* Footer Styles */
